@@ -65,7 +65,7 @@ header.scr {
 
 }
 
-.videoMain video {
+.videoMain img {
   position: relative;
   width: 100%;
   min-height: 100vh;
@@ -75,7 +75,7 @@ header.scr {
  
 }
 
-.videoMain video {
+.videoMain img {
   position: absolute;
   top: 0;
   left: 0;
