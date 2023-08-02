@@ -1,3 +1,0 @@
-# fransiskusguntur.github.io
-
-
