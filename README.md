@@ -1,3 +1,3 @@
-# fransiskus_guntur.github.io
+# fransiskusguntur.github.io
 
 
