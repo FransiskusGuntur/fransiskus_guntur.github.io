@@ -1,0 +1,1178 @@
+
+* {
+  margin:0;
+  padding:0;
+  font-family: GT Walsheim Pro;
+  
+}
+
+.reveal {
+ position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease-in;
+
+}
+
+ .active {
+  position: relative;
+  transform: translateY(0px);
+  opacity: 1;
+
+}
+
+
+.header {
+  min-height:100vh;
+  width:100%;
+  background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(images/car2.png);
+  background-size: cover; /* or 'contain' */
+  background-repeat: no-repeat;
+  background-position: center center;
+  transition:  2s ;
+  
+}
+
+header.scr {
+  
+  min-height:100vh;
+  width:100%;
+  background-image:url(images/car2.png);
+  background-size: cover; /* or 'contain' */
+  background-repeat: no-repeat;
+  background-position: center center;
+  transition:  2s;
+  
+  
+  
+}
+
+.Hobby {
+  min-height:100vh;
+  width:100%;
+  background-image: url(images/car2.png);
+  background-size: cover; /* or 'contain' */
+  background-repeat: no-repeat;
+  background-position: center center;
+  
+}
+
+
+.Hobby {
+  min-height:100vh;
+  z-index: 1;
+  background-attachment: fixed;
+
+}
+
+.videoMain video {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.videoMain video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  user-select: none;
+  mix-blend-mode: screen;
+
+}
+
+.line {
+  border-bottom: 10px solid #949494;
+  display: block;
+  border-radius: 15px;
+  width: 20%;
+  align-items: center;
+  margin-top: 1.5%;
+  margin-left: 35%;
+
+}
+
+.lineRight {
+  border-bottom: 10px solid #949494;
+  display: block;
+  border-radius: 15px;
+  width: 20%;
+  align-items: center;
+  margin-top: 1.5%;
+  margin-right: 35%;
+
+}
+
+#gallery {
+  line-height:0;
+  -webkit-column-count:2; /* split it into 2 columns */
+  -webkit-column-gap:5px; /* give it a 5px gap between columns */
+  -moz-column-count:2;
+  -moz-column-gap:5px;
+  column-count:2;
+  column-gap:5px;
+}
+
+#gallery img {
+  width: 100% !important;
+  height: auto !important;
+  margin-bottom:5px; /* to match column gap */
+  border-radius: 7px;
+}
+
+
+#gallery img:hover {
+  filter:grayscale();
+  transition: filter 2s;
+  
+}
+
+
+
+/*---------PROJECT IMAGES SLIDER---------*/
+
+.webDesign, .PythonSlider{
+  margin-bottom: 200px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 50px;
+  
+}
+
+.webDesign p, .PythonSlider p{
+  padding-left: 15%;
+
+}
+
+.more {
+  margin: 10%;
+
+}
+
+.slider, .geser{
+  width: 1300px;
+  border-radius: 10px;
+  max-width: 100vw;
+  height: 700px;
+  margin: auto;
+  margin-top: 100px;
+  position: relative;
+  overflow: hidden;
+}
+
+.slider .list, .geser .opsi{
+  position: absolute;
+  width: max-content;
+  height: 100%;
+  left: 0;
+  top: 0;
+  display: flex;
+  transition: 1s;
+}
+
+.slider .list img, .geser .opsi img{
+  width: 1300px;
+  max-width: 100vw;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slider .list video, .geser .opsi video{
+  width: 1300px;
+  max-width: 100vw;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slider .buttons, .geser .tombol{
+  position: absolute;
+  top: 45%;
+  left: 5%;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider .buttons button, .geser .tombol button{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #949494;
+  color: #ffffff;
+  border: none;
+  font-family: monospace;
+  font-weight: bold;
+}
+
+.slider .dots, .geser .titik{
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  color: #949494;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.slider .dots li, .geser .titik li{
+  list-style: none;
+  width: 10px;
+  height: 10px;
+  background-color: #949494;
+  margin: 10px;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+.slider .dots li.active, .geser .titik li.nyala{
+  width: 30px;
+}
+
+@media screen and (max-width: 809px){
+  .slider, .geser{
+      height: 400px;
+      width: 95%;
+  }
+}
+
+/*-----HEADER OF HOBBY PAGE---*/
+
+nav {
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 100;
+
+}
+
+nav.black ul {
+  background-color:#949494;
+  border-radius: 5px;
+  transition: 1.5s;
+  width: 100%;
+
+}
+
+nav.black ul li a {
+  color: white;
+
+}
+
+nav img {
+  width: 150px;
+}
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+
+}
+
+.nav-links ul li a{
+  color:#fff;
+  text-decoration:none;
+  font-size:16px;
+  font-family: GT Walsheim Pro;
+}
+ 
+.nav-links ul li::after{
+  content:'';
+  width: 0%;
+  height: 2px;
+  background: #ffffff;
+  display: block;
+  margin: auto;
+  transition:0.5s;
+}
+
+.nav-links ul li:hover::after{
+  width:100%;
+}
+
+.text-box {
+  width:90%;
+  color:#fff;
+  position:absolute;
+  top: 40%;
+  left : 10%;
+  
+}
+
+.Hobby .text-box h1 {
+  width:85%;
+  font-family: GT Walsheim Pro;
+  font-size: 110px;
+  color: #fff;
+  position:absolute;
+  top: 50%;
+  text-align: center;
+  z-index: 1;
+ 
+ 
+}
+
+
+.text-box h1 {
+  font-family: GT Walsheim Pro;
+  font-size: 130px;
+  color: #fff;
+  
+}
+
+@keyframes back {
+  100% {
+    background-position: 2000px 0;
+  }
+}
+
+.text-box h3 {
+  text-align: left;
+  margin-left: 15px;
+  font-size: 18px;
+  color:#fff;
+}
+
+.glass ul{
+  position: absolute;
+  display: flex;
+  top: 83%;
+  left: 70%;
+
+}
+
+.glass ul li {
+  position: relative;
+  list-style: none;
+  margin: 10px;
+}
+
+.glass ul li a {
+  position: relative;
+  width: 40px;
+  height:30px; 
+  display: inline-block;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1em;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 5px 45px rgba(0,0,0,0.1) ;
+  backdrop-filter: blur(2px);
+  transition: 0.5s;
+  overflow: hidden;
+
+}
+
+.glass ul li a:hover {
+  transform: translateY(-15px);
+}
+
+
+.glass ul li a:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  transform: skewX(45deg) translateX(150px);
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+.glass ul li a:hover::before {
+  transform: skewX(45deg) translateX(-150px);
+}
+
+
+
+.hero-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  margin-top: 2%;
+  padding: 19px 34px;
+  font-size: 13px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+
+.hero-btn:hover {
+  border: 1px solid #949494;
+  background:#949494;
+  transition: 1s;
+}
+
+nav .fas{
+  display: none;
+}
+
+nav .far {
+  display: none;
+}
+
+.francisProfile {
+  display: none;
+ 
+}
+
+.aboutKu {
+  width: 100%;
+  min-height: 100vh;
+  margin: auto;
+  text-align:center;
+  padding-top: 100px;
+  overflow-x: hidden;
+
+ 
+}
+
+.aboutKu2 {
+  width: 100%;
+  min-height: 100vh;
+  margin: auto;
+  text-align:center;
+
+  overflow-x: hidden;
+  direction: rtl;
+ 
+}
+
+
+
+@font-face {
+  font-family: GT Walsheim Pro;
+  src: url(fonts/GTWalsheimProRegular.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.aboutKu p, .aboutKu2 p, .webDesign p, .PythonSlider p {
+  font-family: GT Walsheim Pro;
+  font-size: 14px;
+  margin-top: 30px;
+  font-weight: 40;
+  letter-spacing: .5px;
+  line-height: 25px;
+  text-align: center;
+  max-width: 700px;
+  margin-left: 10%;
+  margin-right: 10%;
+  
+
+}
+
+.aboutKu2 .row .about img {
+ margin-right: -110px;
+
+}
+
+
+
+
+.about  {
+  flex-basis: 45%;
+  margin-bottom: 5%;
+}
+
+.aboutFrancis, .aboutBlog  {
+  flex-basis: 45%;
+  margin-right: 7%;
+  margin-bottom: 5%;
+
+}
+
+.about img, video {
+  width: 120%;
+  height: 90%;
+  border-radius: 15px;
+
+ 
+}
+
+.aboutFrancis img {
+  width: 40%;
+  height: 70%;
+  border-radius: 15px;
+ 
+}
+
+.aboutBlog img {
+  width: 60%;
+  height: 90%;
+  border-radius: 15px;
+}
+
+.imageShadow{
+  position: relative;
+}
+
+.imageShadow:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 90%;
+  height: 150px;
+  bottom: 2%;
+  z-index: -1;
+  left: 10%;
+  right: 10%;
+  box-shadow: 0 20px 50px DimGray;
+}
+
+.aboutFrancis .imageShadow:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  bottom: 2%;
+  left: 23%;
+
+  box-shadow: 0 20px 50px DimGray;
+}
+
+
+@media(max-width: 809px){
+  .text-box h1 {
+    ffont-family: GT Walsheim Pro;
+    font-size: 80px;
+    position: relative;
+    padding: 0 0 0 0;
+  
+  }
+
+  .Hobby .text-box h1 {
+    font-family: GT Walsheim Pro;
+    font-size: 80px;
+    position: relative;
+    padding: 0 0 0 0;
+
+  }
+
+  nav.black {
+    position: fixed;
+    background-color:#949494;
+    border-radius: 200px;
+    transition: 1.5s;
+    width: 1%;
+    margin-left: 2%;
+  }
+
+
+
+  nav.black fas-fa-bars {
+    margin-right: 4% ;
+  }
+
+  nav.black ul {
+   
+    background-color:#949494;
+    border-radius: 5px;
+    transition: 1.5s;
+    width: 100%;
+  }
+
+
+
+  .nav-links ul li{
+    display: block;
+
+  }
+
+  .nav-links ul li::after{
+    content:'';
+    width: 0%;
+    height: 5px;
+    background:white;
+    display: block;
+    margin: auto;
+    transition:0.5s;
+    border-radius: 20px;
+
+  }
+  
+  .nav-links ul li:hover::after{
+    width:100%;
+  }
+
+  .nav-links {
+    position: fixed;
+    background-image: transparent;
+    backdrop-filter: blur(20px);
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+    transition: 1s;
+
+  }
+
+  
+  .black .nav-links {
+    background-color:#949494
+
+  }
+
+  nav .fas{
+    display: block;
+    color: #ffffff;
+    margin: 10px;
+    margin-left: -2%;
+    font-size: 22px;
+    cursor: pointer;
+
+  }
+  
+
+  nav .far{
+    display: block;
+    color:#ffffff;
+    margin: 16px;
+    margin-left: 20px;
+    padding-top: 18px;
+    font-size: 24px;
+    cursor:pointer;
+
+  }
+  .francisProfile {
+    display: block;
+    padding: 15%;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+  
+  }
+  
+  .nav-links ul {
+    padding: 30px;
+
+  }
+
+  .glass ul {
+    display: inline-flex;
+    top: 90%;
+    left: 45%;
+    
+  }
+
+  .row{
+    margin-bottom: 11%;
+
+  }
+
+
+ .row .aboutFrancis, .row .aboutBlog {
+    margin-left: 7%;
+  
+  }
+
+  .row .aboutFrancis img{
+    margin-top: 11%;
+    width: 50%;
+    height: 70%;
+
+
+  }
+
+  .webDesign p, .PythonSlider p{
+    padding-left: 0%;
+  }
+
+
+
+  .aboutKu .about video{
+    width: 95%;
+    height:90%;
+  }
+
+
+  .aboutKu2 .row .about img {
+      width: 95%;
+      height: 100;
+      margin-right: 0px;
+
+  }
+
+
+  .imageShadow:after {
+    width: 70%;
+    height: 80%;
+    border-radius: 20px;
+  }
+
+
+  
+  .Hobby .text-box  h1 {
+    top: 30px;
+
+  }
+}
+
+/*----course----*/
+
+.body2 , .schoolSubject{
+  width: 100%;
+  /*background-color:#ffbc00;*/
+  background-color: transparent;
+  margin: 0;
+  margin-bottom: 20%;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: consolas;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  /*background: #1d061a;*/
+}
+
+
+.course, .schoolOpt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 40px 0;
+  
+}
+
+.body2 h1 {
+  font-family: GT Walsheim Pro;
+}
+
+.body2 .course .row .course-col h2, .schoolSubject .schoolOpt .row .textFade h2 {
+  font-family: GT Walsheim Pro;
+  font-weight: 0.1;
+  font-size: 2em;
+  color: #fff;
+  margin-bottom: 10px;
+  
+}
+
+.body2 .course .row .course-col p, .schoolSubject .schoolOpt .row .textFade p {
+  font-family: GT Walsheim Pro;
+  font-size: 18px;
+  margin-bottom: 10px;
+  line-height: 25px;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+h1 { 
+  font-size:36px;
+  font-weight: 500;
+}
+
+p { 
+  color: rgb(0, 0, 0);
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
+}
+
+.row {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+.course .row , .schoolOpt .row {
+  position: relative;
+  width: 320px;
+  height: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 30px;
+  transition: 0.5s;
+
+}
+
+/*---the back glowing----*/
+.course .row:before  {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50px;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  border-radius: 8px;
+
+  transition: 0.5s;
+}
+
+.course .row:after  {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50px;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  border-radius: 8px;
+
+  transition: 0.5s;
+  filter: blur(30px);
+  transition: 0.5s;
+}
+
+
+.course .row:hover:before, .course .row:hover:after {
+  transform: skewX(0deg);
+  left: 20px;
+  width: calc(100% - 11px);
+}
+
+.course .row:nth-child(1):before, .course .row:nth-child(1):after {
+
+  background-image: url(images/DRAM.png);
+  background-size:contain;
+
+}
+
+
+.course .row:nth-child(2):before, .course .row:nth-child(2):after {
+  background-image: url(images/DSP.png);
+
+}
+
+.course .row:nth-child(3):before, .course .row:nth-child(3):after {
+  background-image: url(images/SRAM.png);
+
+}
+
+.course .row span {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 50;
+  pointer-events: none;
+
+}
+
+.course .row span::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(10px);
+  opacity: 0;
+  transition: 0.5s;
+  animation: animateCard 2s ease-in-out infinite;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+
+.course .row:hover span::before {
+  top: -50px;
+  left: 50px;
+  width: 100px;
+  height: 100px;
+  opacity: 1;
+
+}
+
+
+.course .row span::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(10px);
+  opacity: 0;
+  transition: 0.5s;
+  animation: animateCard 2s ease-in-out infinite;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  animation-delay: -1s;
+}
+
+
+
+.course .row:hover span::after {
+  bottom: -50px;
+  right: 50px;
+  width: 100px;
+  height: 100px;
+  opacity: 1;
+
+}
+
+
+@keyframes animateCard {
+  0%,100% {
+    transform: translateY(10px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  
+}
+
+
+.course .row .course-col {
+  position: relative;
+  left: 0;
+  padding: 20px 40px;
+  background: rgba(255,255,255,0.05);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  border-radius:8 px;
+  backdrop-filter: blur(10px);
+  z-index: 1;
+  transition: 0.5s;
+  color: #fff;
+
+}
+
+.course  .row:hover .course-col {
+  left: 25px;
+  padding: 60px 40px;
+
+}
+
+
+h3 {
+  text-align: center;
+  font-weight: 600;
+  margin: 10px 0;
+
+}
+
+.course-col:hover{
+  box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+
+
+@media(max-width: 809px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+
+
+
+
+.campus-col img{
+  width: 100%;
+  display: block;
+}
+
+/*--this is again basically those cool stuff u get when ur
+cursor is at an object, just add hover*/
+.layer {
+  background: transparent;
+  height:100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+.layer:hover {
+  background: rgba(223, 223, 223, 0.7);
+
+}
+
+.layer h3 {
+  width:100%;
+  font-family: GT Walsheim Pro;
+  font-weight: 400;
+  color:rgb(0, 0, 0);
+  font-size: 26px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s;
+}
+.layer:hover h3{
+  bottom: 49%;
+  opacity: 1;
+}
+
+
+
+/*---IMAGE FADE SECTION---*/
+
+.schoolOpt .row:before  {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50px;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  border-radius: 8px;
+
+  transition: 0.5s;
+}
+
+
+.schoolOpt .row:after  {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50px;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  border-radius: 8px;
+  filter: blur(30px);
+
+  transition: 0.5s;
+
+}
+
+.schoolOpt .row:hover::after {
+  z-index: 10000;
+  filter: none;
+
+
+}
+
+
+.schoolOpt .row:hover:before, .schoolOpt .row:hover:after {
+  transform: skewX(0deg);
+  left: 20px;
+  width: calc(100% - 11px);
+}
+
+.schoolOpt .row:nth-child(1):before, .schoolOpt .row:nth-child(1):after {
+
+  background-image: url(images/DRAM.png);
+  background-size: contain;
+
+}
+
+
+.schoolOpt .row:nth-child(2):before, .schoolOpt .row:nth-child(2):after {
+  background-image: url(images/DSP.png);
+  background-size: contain;
+
+}
+
+.schoolOpt .row:nth-child(3):before, .schoolOpt .row:nth-child(3):after {
+  background-image: url(images/SRAM.png);
+  background-size: contain;
+
+}
+
+
+.schoolOpt .row .textFade {
+  position: relative;
+  left: 0;
+  padding: 20px 40px;
+  background: rgba(255,255,255,0.05);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  border-radius:8 px;
+  backdrop-filter: blur(10px);
+  z-index: 1;
+  transition: 0.5s;
+  color: #fff;
+}
+
+
+
+.schoolOpt .row .textFade h2 {
+  font-size: 2em;
+  color: #fff;
+  margin-bottom: 10px;
+
+}
+
+.schoolOpt .row .textFade p {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  line-height: 1.4em;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+/*---footer----*/
+
+.footer{
+  width: 100%;
+  min-height: 30%;
+  text-align: center;
+  padding: 30px 0;
+  color: #fff;
+  z-index: 20000;
+ 
+  
+}
+
+.footer p {
+  letter-spacing: .8px;
+  font-size: 14px;
+  font-family: GT Walsheim Pro;
+  text-align: center;
+  color: #000000;
+  line-height: 25px;
+  font-weight: 400;
+}
+
+
+
+

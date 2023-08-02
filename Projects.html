@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> fransiskus_guntur </title>
+    <link rel="shortcut icon" type="image/x-icon" href="profileLogo.png">
+    <meta name="viewport" content="with=device-width, initial
+    scale=1.0">
+    <link rel="stylesheet" href="PortfolioStyle.css">
+    <script src="Typed.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Spartan:wght@200;600;700&display=swap" rel="stylesheet">
+
+<!--Icons activation link, latest version-->
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+
+
+<section class="Hobby">
+    <nav>
+        <div class="nav-links" id="navLinks">
+            <i class="far fa-times-circle" onclick="hideMenu()"></i>
+            <img class="francisProfile" src="images/sydney2.jpg">
+            <ul>
+                <li><a href="Portfolio.html">Home</a></li>
+                <li><a href="Projects.html">Project</a></li>
+                <li><a href="Blog.html">Blog</a></li>
+            </ul>
+        </div>
+        <i class="fas fa-bars" onclick="showMenu()"></i>
+    </nav>
+    
+<div class="text-box">
+    <h1>Projects</h1>
+
+    
+</div>
+
+<div class="videoMain">
+
+    <img src="images/mask.jpg" class="mask">
+</div>
+
+
+</section>
+
+<!---------------PROJECT IMAGES SLIDER------------------>
+
+<section class="webDesign reveal">
+    
+
+    
+    <h1>
+        Web development (front-end)
+    </h1>
+    <p>
+        Currently I only use basic HTML, CSS, & Javascript for front-end work, but hopefully will learn other language or
+         frameworks. Below is a snippet of my web dev jorney. 
+    </p>
+
+    <div class="slider">
+        <div class="list">
+            <div class="item">
+                <video src="video/web1.mp4" autoplay loop muted type="mp4"></video>
+            </div>
+            <div class="item">
+                <video src="video/web2.mp4" autoplay loop muted type="mp4"></video>
+            </div>
+            <div class="item">
+                <video src="video/web3.mp4" autoplay loop muted type="mp4"></video>
+            </div>
+            <div class="item">
+                <img src="images/webDeclare.png">
+            </div>
+
+          
+        </div>
+        <div class="buttons">
+            <button id="prev"><</button>
+            <button id="next">></button>
+        </div>
+        <ul class="dots">
+            <li class="active"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+           
+        </ul>
+    </div>
+
+    <script src="app.js"></script>
+
+
+
+
+</section>
+
+
+<section class="PythonSlider reveal">
+
+    
+    <h1>
+        Microcontrollers
+    </h1>
+    <p>
+        Mostly involve C/C++, Arduino IDE, but I also try to include python to utilises its extensive
+        libraries/modules. Below are simple proof-of-concept projects which uses household materials as their mechanical parts. 
+    
+ 
+        
+    </p>
+
+    <div class="geser">
+        <div class="opsi">
+            <div class="barang">
+                <img src="images/arduino.png">
+            </div>
+            <div class="barang">
+                <video src="video/ardCompV.mp4" autoplay loop muted type="mp4"></video>
+            </div>
+            
+          
+        </div>
+        <div class="tombol">
+            <button id="sebelum"><</button>
+            <button id="berikut">></button>
+        </div>
+        <ul class="titik">
+            <li class="nyala"></li>
+            <li></li>
+
+        </ul>
+    </div>
+
+    <script src="electronicProjects/xscroll.js"></script>
+
+    
+</section>
+
+
+<section class="more">
+    <h1>More will be added. Visit my gitHub
+        for the latest!
+    </h1>
+
+
+</section>
+
+
+
+
+<section class="footer">
+
+    <p>"it is what it is" mentality aspirant</p>
+    <p>© Fransiskus Guntur</p>
+
+</section>
+
+
+
+
+<!---Javascript for toggle Menu--->
+
+ <script>
+
+     var navLinks = document.getElementById("navLinks")
+     function showMenu() {
+         navLinks.style.right = "0";
+     }
+     var navLinks = document.getElementById("navLinks")
+     function hideMenu() {
+         navLinks.style.right = "-200px";
+     }
+ </script>
+
+<script type="text/javascript">
+    window.addEventListener('scroll', reveal);
+
+    function reveal() {
+        var reveals =document.querySelectorAll('.reveal');
+
+        for(var i = 0; i < reveals.length; i++){
+
+            var windowheight = window.innerHeight;
+            var revealtop = reveals[i].getBoundingClientRect().top;
+            var revealpoint = 200;
+
+            if(revealtop < windowheight - revealpoint){
+                reveals[i].classList.add('active');
+            }
+
+            else {
+                reveals[i].classList.remove('active');
+            }
+
+
+        }
+    }
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+    var typed = new Typed('.type', {
+
+strings: ['', 'Still a Student', 'Just a Student'],
+typeSpeed: 100,
+backSpeed:70,
+loop: true,
+});
+
+</script>
+
+<script type="text/javascript">
+    let mountain = document.getElementById("mountain");
+    let city = document.getElementById("city");
+    //let music = document.getElementById("music");
+    //let road = document.getElementById("road");
+    //let text = document.getElementById("text");
+
+    window.addEventListener('scroll', function() {
+        var value=window.scrollY;
+        //var total=screen.availHeight;
+
+
+        mountain.style.top = -value*0.1 + 'px';
+        city.style.top = value*0.15  + 'px';
+
+
+        //eil.style.left = value * 0.5 + 'px';
+        //music.style.right = value * 0.5 + 'px';
+        //road.style.top = value * 0.15 + 'px';
+        //text.style.top = value * 1 + 'px';
+
+
+    })
+    
+    
+    </script>
+
+
+<script>
+    $(window).scroll(function(){
+        if($(window).scrollTop()) {
+            $("nav").addClass("black");
+        }
+        else {
+            $("nav").removeClass("black");
+        }
+    })
+
+</script>
+
+
+
+
+
+
+ 
+</body>
+
+
+
+
+</html>
+
+
+
+
+

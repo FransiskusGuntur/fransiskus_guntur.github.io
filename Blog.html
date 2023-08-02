@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> fransiskus_guntur </title>
+    <link rel="shortcut icon" type="image/x-icon" href="profileLogo.png">
+    <meta name="viewport" content="with=device-width, initial
+    scale=1.0">
+    <link rel="stylesheet" href="PortfolioStyle.css">
+    <script src="Typed.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Spartan:wght@200;600;700&display=swap" rel="stylesheet">
+
+<!--Icons activation link, latest version-->
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+<section class="Hobby">
+    <nav>
+        <div class="nav-links" id="navLinks">
+            <i class="far fa-times-circle" onclick="hideMenu()"></i>
+            <img class="francisProfile" src="images/sydney2.jpg">
+            <ul>
+                <li><a href="Portfolio.html">Home</a></li>
+                <li><a href="Projects.html">Project</a></li>
+                <li><a href="Blog.html">Blog</a></li>
+
+            </ul>
+        </div>
+        <i class="fas fa-bars" onclick="showMenu()"></i>
+    </nav>
+    
+<div class="text-box">
+    <h1>Blog</h1>
+    
+</div>
+
+<div class="videoMain">
+    <video src="video/madrid.mp4" autoplay loop muted type="mp4"></video>
+</div>
+
+
+</section>
+
+
+<section class="aboutKu reveal">
+    <!--<h1>About Me</h1>-->
+    <div class="row">
+        <div class="about">
+            <h1>a MADRIDISTA!</h1>
+            <p> 
+                I have been a madridsta since 2015.
+                 I also play football, but unfortunately couldn't found any image from highschool
+                
+
+
+            </p>
+
+        </div>
+        <div class="aboutBlog">
+
+            <a href="https://www.freepnglogos.com/pics/real-madrid-logo/">
+                <img src="images/realMadrid.png">
+            </a>  
+
+        </div>
+    </div>
+
+</section>
+
+
+<!---hobbies-->
+
+<section class="aboutKu2 reveal">
+    <div class="row">
+        <div class="about">
+            <h1>Badminton</h1>
+            <span class="lineRight"></span>
+            <p>I enjoy playing badminton. This is one of our picture 
+                at the district final (male k10-12 group)
+                
+            </p>
+        </div>
+        <div class="about">
+            <div class="imageShadow">
+                <img src="images/badmintonInter.jpeg">
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+<section class="aboutKu reveal ">
+    <div class="row">
+        <div class="about">
+            <h1>music</h1>
+            <span class="line"></span>
+            <p>I enjoy playing the piano, and was fortunate enough to experience playing in church choir and school bands
+                Song :  Love me ~Yiruma </p>
+        </div>
+        <div class="about">
+            <div class="imageShadow">
+                <video controls
+                src="video/pianoYiruma.mp4" type="video/mp4">
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section class="aboutKu2 reveal">
+    <div class="row">
+        <div class="about">
+            <h1>Anime and manga</h1>
+            <span class="lineRight"></span>
+            <p>I enjoy watching anime and reading manga, mostly trending ones.  </p>
+        </div>
+        <div class="about">
+            <div class="imageShadow">
+                <img src="images/animManga.png">
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+<!---Footer-->
+
+<section class="footer">
+
+    <p>this website might get cooked for using too many protected content, but "it is what it is"</p>
+    <p>© Fransiskus Guntur</p>
+
+</section>
+
+
+
+<!---Javascript for toggle Menu--->
+
+ <script>
+
+     var navLinks = document.getElementById("navLinks")
+     function showMenu() {
+         navLinks.style.right = "0";
+     }
+     var navLinks = document.getElementById("navLinks")
+     function hideMenu() {
+         navLinks.style.right = "-200px";
+     }
+ </script>
+
+<script type="text/javascript">
+    window.addEventListener('scroll', reveal);
+
+    function reveal() {
+        var reveals =document.querySelectorAll('.reveal');
+
+        for(var i = 0; i < reveals.length; i++){
+
+            var windowheight = window.innerHeight;
+            var revealtop = reveals[i].getBoundingClientRect().top;
+            var revealpoint = 200;
+
+            if(revealtop < windowheight - revealpoint){
+                reveals[i].classList.add('active');
+            }
+
+            else {
+                reveals[i].classList.remove('active');
+            }
+
+
+        }
+    }
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+    var typed = new Typed('.kontol', {
+
+strings: ['', 'Still a Student', 'Just a Student'],
+typeSpeed: 100,
+backSpeed:70,
+loop: true,
+});
+
+
+</script>
+
+<script type="text/javascript">
+    let mountain = document.getElementById("mountain");
+    let city = document.getElementById("city");
+    //let music = document.getElementById("music");
+    //let road = document.getElementById("road");
+    //let text = document.getElementById("text");
+
+    window.addEventListener('scroll', function() {
+        var value=window.scrollY;
+        //var total=screen.availHeight;
+
+
+        mountain.style.top = -value*0.1 + 'px';
+        city.style.top = value*0.15  + 'px';
+
+
+        //eil.style.left = value * 0.5 + 'px';
+        //music.style.right = value * 0.5 + 'px';
+        //road.style.top = value * 0.15 + 'px';
+        //text.style.top = value * 1 + 'px';
+
+
+    })
+    
+    
+    </script>
+
+
+<script>
+    $(window).scroll(function(){
+        if($(window).scrollTop()) {
+            $("nav").addClass("black");
+        }
+        else {
+            $("nav").removeClass("black");
+        }
+    })
+
+</script>
+
+
+ 
+</body>
+
+
+</html>
+
+
+
+
+
